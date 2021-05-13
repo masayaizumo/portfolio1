@@ -1,0 +1,458 @@
+/* base */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+h1,h2,h3,p,a,small {
+  line-height: 1.2rem;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", 游明朝体, sans-serif;
+}
+
+.wrapper-container {
+  padding: 90px 200px 180px;
+}
+.container-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 90px;
+  
+}
+h2 {
+  font-weight: normal;
+}
+a:hover {
+  opacity: 0.7;
+  transition:.3s;
+  cursor: pointer;
+}
+.header-logo:hover,.detail-box:hover,.case-list:hover,.footer-logo img:hover,.company-img:hover,.hum-img:hover {
+  opacity: 0.7;
+  transition:.3s;
+  cursor: pointer;
+}
+br {
+  display: none;
+}
+/* //base */
+
+/* header */
+.header {
+  padding:30px 170px 0;
+  height: 800px;
+  background-image: url(../img/main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hum-img {
+  display: none;
+  
+}
+.header-logo img {
+  height: 60px;
+  vertical-align: bottom;
+}
+.nav-item {
+  display: flex;
+}
+.nav-item li{
+  list-style: none;
+  margin-right: 60px;
+}
+.nav-item li:last-of-type{
+  margin-right: 0;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: #000000;
+ 
+}
+/* ハンバーガーメニュー */
+.hum-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+  border: none;
+
+}
+.bar {
+  width: 25px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  
+  left: 50%;
+  transform: translateX(-50%);
+  background-color :#000000;
+}
+.bar-top {
+  top: 12px;
+
+}
+.bar-mid {
+  top: 50%;
+}
+.bar-bottom{
+bottom:12px;
+
+}
+/* ハンバーガーメニュー */
+
+/* ×メニュー */
+.hum-btn.close .bar-top{
+  transform: translateY(8px) rotate(50deg);
+  transition: .3s;
+}
+.hum-btn.close .bar-mid{
+  transition: .3s;
+  opacity: 0;
+}
+.hum-btn.close .bar-bottom{
+  transform: translateY(-6px) rotate(130deg);
+  transition: .3s;
+
+}
+
+/* //×メニュー */
+
+
+
+/* Fv */
+.fv-text {
+  font-size: 3.6rem;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* //Fv */
+
+/* //header */
+
+
+/* News */
+.section-container {
+  width: 700px;
+  margin: 0 auto;
+}
+.news-box {
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  border-bottom: #000000 solid 1px;
+}
+.news-box:last-of-type {
+  padding-bottom: 19px;
+  margin-bottom: 0;
+}
+.news-box a{
+  text-decoration: none;
+  color: #000000;
+}
+.news-box p{
+  font-size: 1.1rem;
+}
+.date {
+  
+  margin-right: 31px;
+  width: 90px;
+}
+.topics {
+ 
+  font-size: .8rem;
+  border : 1px solid #6A808A;
+  width: 60px;
+  margin-right: 30px;
+  vertical-align: top;
+  padding:3px 6px;
+   
+}
+
+/*// News */
+
+/* Case */
+
+.case-wrapper {
+  padding-top: 180px;
+  width: 980px;
+  margin: 0 auto;
+}
+.case-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex {
+  width: 430px;
+  text-align: center;
+}
+.img-box img{
+  width: 100%;
+}
+h3 {
+  margin:30px 0 15px;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.place {
+  margin-bottom: 15px;
+}
+
+.detail-box {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.detail-box img{
+  width: 100%;
+  
+}
+.case-list {
+  width:200px;
+  margin: 80px auto 0;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 12px 40px ;
+  border:#000000 solid 1px ;
+} 
+
+/* //Case */
+
+
+/* 会社概要 */
+.company-wrapper {
+  background-color: #000000;
+}
+.company-flex {
+  display: flex;
+}
+
+
+
+/* //会社概要 */
+
+/* footer */
+.footer {
+  padding: 30px 170px 10px;
+}
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.footer-logo img {
+  height: 40px;
+  vertical-align: bottom;
+}
+.footer-list {
+  display: flex;
+}
+.footer-list li{
+  list-style: none;
+  margin-right: 60px;
+}
+.footer-list li:last-of-type{
+  margin-right: 0;
+}
+
+.footer-list a{
+  text-decoration: none;
+  color: #FFFFFF;
+ 
+}
+small {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-size: .8rem;
+}
+
+/* footer */
+
+
+
+
+
+
+/* スマホ表示 */
+
+@media(max-width:768px){
+
+/* base */
+
+*{
+  line-height: 3rem;
+}
+body.noscroll{
+  overflow: hidden;
+}
+  .header,.wrapper-container {
+    padding:0 20px;
+  }
+  .container-title {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .date,.topics {
+    font-size: .8rem;
+    vertical-align: top;
+  }
+  br {
+    display: block;
+    
+  }
+
+ /* //base */
+
+/* header */
+.header {
+  padding: 15px 0 0 0;
+  background-size: cover;
+  height: 50vh;
+}
+.header-logo {
+  margin-left: 20px;
+}
+
+.header-nav {
+  display: none;
+}
+.hum-img{
+  display: block;
+}
+.fv-text {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* //header */
+
+/* ハンバーガーメニュー */
+.hum-btn {
+  display: block;
+  position: fixed;
+  right: 4vh;
+  top: 4vh;
+}
+.hum-btn:hover {
+  opacity: .7;
+  cursor: pointer;
+  transition: .3s;
+} 
+.header-nav {
+  position: fixed;
+  width: 100vw;
+  height: 90vh;
+ opacity: 10;
+  background-color: #bddeeb;
+  z-index: 2;
+  margin: 0 auto;
+}
+.header-list {
+  /* height: 100vh; */
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-right: 0;
+  text-align: center;
+  
+}
+.header-list li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.header-list a {
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+
+/* News */
+
+.section-wrapper{
+  padding: 50px 15px 0;
+}
+.news-box p{
+  vertical-align: top;
+  line-height: 2px;
+  
+}
+.topics {
+  
+  margin-bottom: 15px;
+}
+
+/* //News */
+
+/* Case */
+.case-wrapper {
+  padding-top: 100px;
+}
+.case-flex {
+  flex-direction: column;
+}
+.flex {
+  margin-bottom: 50px;
+}
+h3 {
+font-size: 1.3rem;
+}
+.place {
+  font-size: 0.6rem;
+}
+.case-list {
+  margin-top: 0;
+}
+
+/* 会社概要 */
+.company-wrapper {
+  margin-top: 110px;
+}
+.company-flex {
+  flex-direction: column;
+}
+.company-img img{
+  vertical-align: bottom;
+}
+/* //会社概要 */
+
+/* footer */
+.footer {
+  padding: 30px 0 15px;
+}
+.footer-item {
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  flex-direction: column;
+  margin-bottom: 50px;
+  
+
+}
+.footer-list li {
+  margin-right: 0;
+  text-align: center;
+}
+
+
+
+
+
+}
