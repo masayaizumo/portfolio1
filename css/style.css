@@ -109,7 +109,7 @@ bottom:12px;
 
 /* ×メニュー */
 .hum-btn.close .bar-top{
-  transform: translateY(8px) rotate(50deg);
+  transform: translate(-10px ,7px) rotate(45deg);
   transition: .3s;
 }
 .hum-btn.close .bar-mid{
@@ -117,11 +117,10 @@ bottom:12px;
   opacity: 0;
 }
 .hum-btn.close .bar-bottom{
-  transform: translateY(-6px) rotate(130deg);
+  transform: translate(-10px, -8px) rotate(135deg);
   transition: .3s;
 
 }
-
 /* //×メニュー */
 
 
