@@ -137,6 +137,7 @@ bottom:12px;
 /*------------------------------*/
 .fv-text {
   font-size: 3.6rem;
+  line-height: 4rem;
   font-weight: normal;
   position: absolute;
   top: 50%;
